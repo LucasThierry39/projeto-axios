@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export const api = await axios.create({
-    baseURL: "http://localhost:5000"
+    baseURL: "http://api.github.com/LucasThierry39
 })
