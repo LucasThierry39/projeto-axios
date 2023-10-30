@@ -1,7 +1,9 @@
+import { List } from "./components/List"
+
 function App() {
 
   return (
-    <h1>Teste Axios</h1>
+    <List/>
   )
 }
 
