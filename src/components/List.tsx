@@ -13,7 +13,7 @@ interface User{
 export function List() {
 
 // -- CONST -- \\
-const [user, setUser] = useState(User | null>(null))
+const [user, setUser] = useState<User | null>(null)
 
 // -- FUNÇÃO -- \\
 function loadUser() {
@@ -33,7 +33,8 @@ function loadUser() {
     return(
         <div>
             <h2>Dados do Usuario</h2>
-            <p>{user.name}</p>
+            {user?
+            (<p>{user.username} - {user.email}</p>):(<p>Loading...</p>)}
         </div>
     )
 // -- FINAL RETURN -- \\
